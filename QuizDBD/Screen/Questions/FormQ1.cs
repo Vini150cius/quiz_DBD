@@ -17,6 +17,7 @@ namespace QuizDBD.Screen.Questions
     public partial class FormQ1 : Form
     {
         public int escolha = 0;
+        private Timer timer;
         public FormQ1()
         {
             InitializeComponent();
@@ -80,6 +81,7 @@ namespace QuizDBD.Screen.Questions
                 u.AdicionarPontos();
             }
             this.Hide();
+
             f.ShowDialog();
             this.Dispose();
         }
