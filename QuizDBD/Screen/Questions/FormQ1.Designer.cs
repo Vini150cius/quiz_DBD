@@ -133,7 +133,7 @@
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblQuestion.Location = new System.Drawing.Point(88, 112);
+            this.lblQuestion.Location = new System.Drawing.Point(62, 112);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(745, 31);
             this.lblQuestion.TabIndex = 7;
@@ -156,6 +156,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblUserName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(885, 527);
             this.Name = "FormQ1";

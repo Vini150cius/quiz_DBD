@@ -155,9 +155,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblUserName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQ2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormQ2";
+            this.Text = "Pergunta 02";
             this.ResumeLayout(false);
             this.PerformLayout();
 
