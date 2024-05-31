@@ -79,13 +79,16 @@
             // 
             // HomeScreen
             // 
-            resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.linkPerfil);
             this.Controls.Add(this.btnRaking);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.TitlePage);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeScreen";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.HomeScreen_Load);

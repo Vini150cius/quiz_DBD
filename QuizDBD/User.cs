@@ -1,29 +1,25 @@
-﻿internal class User
+﻿public class User
 {
-    public string NameUser;
-    public int Score;
-
     private static User _instance;
+    private static readonly object _lock = new object();
+
+    public string NameUser { get; set; }
+    public int Score { get; set; }
+
+    private User() { }
 
     public static User Instance
     {
-        get { return _instance; }
-        set { _instance = value; }
-    }
-    public User()
-    {
-
-    }
-    public User(string NameUser)
-    {
-        this.NameUser = NameUser;
-        Score = 000;
-        Instance = this;
-    }
-
-    public int AdicionarPontos()
-    {
-        this.Score = 001;
-        return Score;
+        get
+        {
+            lock (_lock)
+            {
+                if (_instance == null)
+                {
+                    _instance = new User();
+                }
+                return _instance;
+            }
+        }
     }
 }

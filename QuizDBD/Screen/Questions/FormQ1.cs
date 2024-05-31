@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
 using System.Runtime.InteropServices.ComTypes;
+using System.Media;
 
 namespace QuizDBD.Screen.Questions
 {
@@ -26,39 +27,11 @@ namespace QuizDBD.Screen.Questions
 
         public void FormQ1_Load(object sender, EventArgs e)
         {
-            User u = User.Instance;
-            lblScore.Text = Convert.ToString(u.Score);
-            lblUserName.Text = u.NameUser;
-            /*string jsonData = JsonConvert.SerializeObject(new { score = u.Score, nameUser = u.NameUser });
-            string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "data.json");
-            File.WriteAllText(filePath, jsonData);*/
-            string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "data.json");
+            string nameUser = User.Instance.NameUser;
+            int score = User.Instance.Score;
 
-            // Carrega o conteúdo do arquivo JSON existente
-            string jsonData = File.ReadAllText(filePath);
-
-            // Cria um novo objeto JSON
-            var newData = new { score = u.Score, nameUser = u.NameUser };
-
-            // Serializa o novo objeto JSON em uma string
-            string newJsonData = JsonConvert.SerializeObject(newData);
-
-            // Verifica se o arquivo já contém algum dado JSON
-            if (!string.IsNullOrEmpty(jsonData))
-            {
-                // Remove a última vírgula do arquivo existente
-                jsonData = jsonData.TrimEnd(';');
-
-                // Adiciona uma vírgula para separar os objetos JSON
-                jsonData += ";";
-            }
-
-            // Adiciona o novo objeto JSON à string
-            jsonData += newJsonData;
-
-            // Salva a string atualizada no arquivo JSON
-            File.WriteAllText(filePath, jsonData);
-
+            lblScore.Text = score.ToString();
+            lblUserName.Text = nameUser;
         }
 
         private void lblScore_Click(object sender, EventArgs e)
@@ -71,17 +44,42 @@ namespace QuizDBD.Screen.Questions
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            User u = new User();
-            
             FormQ2 f = new FormQ2();
             if(escolha == 3)
             {
-                u.AdicionarPontos();
-            }
-            this.Hide();
+                User.Instance.Score++;
 
+                try
+                {
+                    Stream somStream = Properties.Resources.correct_6033;
+                    SoundPlayer player = new SoundPlayer(somStream);
+
+                    player.Load();
+                    player.Play();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao tocar o som: " + ex.Message);
+                }
+            }
+            else
+            {
+                try
+                {
+                    Stream somStream = Properties.Resources.error_126627;
+                    SoundPlayer player = new SoundPlayer(somStream);
+                    player.Load();
+                    player.Play();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao tocar o som: " + ex.Message);
+                }
+            }
+            await Task.Delay(500);
+            this.Hide();
             f.ShowDialog();
             this.Dispose();
         }

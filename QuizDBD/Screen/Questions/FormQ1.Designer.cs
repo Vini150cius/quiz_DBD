@@ -37,8 +37,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.lblQuestion = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUserName
@@ -77,7 +75,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(296, 434);
+            this.button1.Location = new System.Drawing.Point(296, 417);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(277, 42);
             this.button1.TabIndex = 2;
@@ -88,7 +86,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(176, 205);
+            this.button2.Location = new System.Drawing.Point(176, 170);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(516, 42);
             this.button2.TabIndex = 3;
@@ -99,7 +97,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(176, 265);
+            this.button3.Location = new System.Drawing.Point(176, 230);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(516, 42);
             this.button3.TabIndex = 4;
@@ -110,7 +108,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(176, 325);
+            this.button4.Location = new System.Drawing.Point(176, 290);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(516, 42);
             this.button4.TabIndex = 5;
@@ -121,7 +119,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(176, 385);
+            this.button5.Location = new System.Drawing.Point(176, 350);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(516, 42);
             this.button5.TabIndex = 6;
@@ -133,27 +131,13 @@
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblQuestion.Location = new System.Drawing.Point(87, 29);
+            this.lblQuestion.Location = new System.Drawing.Point(88, 112);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(693, 31);
+            this.lblQuestion.Size = new System.Drawing.Size(745, 31);
             this.lblQuestion.TabIndex = 7;
             this.lblQuestion.Text = "Qual é a empresa que desenvolveu o Dead By Daylight?";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(317, 72);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(229, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // FormQ1
             // 
@@ -164,7 +148,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(869, 488);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -180,7 +163,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pergunta 01";
             this.Load += new System.EventHandler(this.FormQ1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +178,5 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label lblQuestion;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

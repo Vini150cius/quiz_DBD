@@ -82,6 +82,12 @@
     <Compile Include="Screen\Questions\FormQ2.Designer.cs">
       <DependentUpon>FormQ2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screen\Questions\FormQ3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Questions\FormQ3.Designer.cs">
+      <DependentUpon>FormQ3.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Screen\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -97,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Screen\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -106,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\Questions\FormQ2.resx">
       <DependentUpon>FormQ2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Questions\FormQ3.resx">
+      <DependentUpon>FormQ3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -121,8 +131,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Media\" />
+    <None Include="Media\correct-6033.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\error-126627.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
