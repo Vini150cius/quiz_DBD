@@ -94,6 +94,12 @@
     <Compile Include="Screen\Questions\FormQ4.Designer.cs">
       <DependentUpon>FormQ4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screen\Questions\FormQ5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen\Questions\FormQ5.Designer.cs">
+      <DependentUpon>FormQ5.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Screen\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screen\Questions\FormQ3.resx">
       <DependentUpon>FormQ3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screen\Questions\FormQ4.resx">
+      <DependentUpon>FormQ4.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

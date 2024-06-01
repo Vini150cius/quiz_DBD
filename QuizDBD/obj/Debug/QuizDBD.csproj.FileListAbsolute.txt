@@ -50,3 +50,4 @@ C:\Users\Pichau\OneDrive\Área de Trabalho\Vinicius\Estudos\quiz_DBD\QuizDBD\obj
 C:\Users\Pichau\OneDrive\Área de Trabalho\Vinicius\Estudos\quiz_DBD\QuizDBD\obj\Debug\QuizDBD.exe
 C:\Users\Pichau\OneDrive\Área de Trabalho\Vinicius\Estudos\quiz_DBD\QuizDBD\obj\Debug\QuizDBD.pdb
 C:\Users\Pichau\OneDrive\Área de Trabalho\Vinicius\Estudos\quiz_DBD\QuizDBD\obj\Debug\QuizDBD.Screen.Questions.FormQ3.resources
+C:\Users\Pichau\OneDrive\Área de Trabalho\Vinicius\Estudos\quiz_DBD\QuizDBD\obj\Debug\QuizDBD.Screen.Questions.FormQ4.resources

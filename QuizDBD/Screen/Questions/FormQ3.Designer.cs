@@ -158,6 +158,7 @@
             this.Name = "FormQ3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pergunta 03";
+            this.Load += new System.EventHandler(this.FormQ3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

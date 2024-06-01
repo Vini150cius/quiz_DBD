@@ -27,6 +27,10 @@ namespace QuizDBD.Screen.Questions
 
 
         }
+        private void FormQ3_Load(object sender, EventArgs e)
+        {
+
+        }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
@@ -122,5 +126,7 @@ namespace QuizDBD.Screen.Questions
             f.ShowDialog();
             this.Dispose();
         }
+
+        
     }
 }
